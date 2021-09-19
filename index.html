@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Index </title>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="app.js"> </script>
+<link rel="stylesheet"  href="style.css">
+</head>
+<body class="login_box">
+    <div class="container_login">
+        <h1 style="color: black;">LOGIN USERS ENJOY GAME</h1>
+        <div id="login_box">
+            <h2>Enter Email</h2>
+    <input type="email" id="email" /><br><br>
+    <h2>Enter Password</h2>
+    <input type="password" id="password" /><br><br>
+    <button class="btn" onclick="login()">Login</button><br><br>
+    <a href="sign_up.html" ><button class="btn" class="sign_up">Sign Up</button></a>
+        </div>
+
+        <div id="welcome_box">
+            <div class="header">
+                <div class="welcome">
+                    Welcome User:
+                    <span id="user"></span>
+                    
+
+                    <div class="wrapper">
+                        <h1>Pop the balloons by moving</br>your mouse over them</h1>
+                        <div id="yay-no-balloons"><span class="blue">Wow!</span> All balloons popped!</div>
+                        <div id="balloon-gallery">
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                        </div>
+                
+                    </div>
+
+                </div>
+
+                <!-- Poop Ballon  -->
+                <!-- End Code -->
+                <div class="logged-in-info">
+                    Last Logged in at:
+                    <span id="lastLoggedIn"></span>
+                </div>
+                <div>
+                    <button onclick="logout()" class="logout btn">Logout</button>
+                </div>
+            </div>
+
+
+  
+</div>
+    </body>
+</html>
